@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+li{
+    list-style-type: none;
+    float: left;
+    padding : 15px
+}/*list-style-type =<ul> 점 지우기*/
+
+li:nth-child(2n+1){
+background-color: #800000;
+}
+li:nth-child(2n){
+background-color: blue;
+}
+
+li:first-child{
+    border-radius: 10px 0px 0px 10px;
+}
+
+li:last-child{
+    border-radius: 0px 10px 10px 0px;
+}
+
+li:hover{
+    color : white;
+}
+
+hr{
+    clear: both;
+}
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    border : 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    float : left;
+}
+
+.red {
+    background-color: red;
+}
+.blue {background-color: blue;}
+/*img{float : left/right}방향으로 이미지를 올려서 이동
+li{list-style : none} 점 없어짐
+li:nth-child(2n) -> 짝수만  li:nth-child(2n+1) -> 홀수만
+--> 메뉴를 만드는 기본 방식 */
+    </style>
+</head>
+<body>
+
+
+<ul>
+    <li>first</li>
+    <li>second</li>
+    <li>third</li>
+    <li>fouth</li>
+    <li>fifth</li>
+    <li>sixth</li>
+    <li>seventh</li>
+</ul>
+<hr>
+<div class="box red">
+
+
+</div>
+<div class="box blue">
+
+
+</div>
+
+</body>
+</html>

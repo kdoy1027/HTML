@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ex div {
+            width: 100px;
+            height: 50px;
+            background-color: #006aff;
+            color: white;
+            float: left;
+            border-radius: 10px;
+            margin: 5px 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #ex:hover div {
+            height: 400px;
+        }
+        
+        #ex .ease {
+            transition: 3s ease;
+        }
+
+
+        #ex .linear{
+            transition: 3s linear;
+        }
+
+        #ex .ease-in {
+            transition: 3s ease-in;
+        }
+
+        #ex .ease-out {
+            transition: 3s ease-out;
+        }
+
+        #ex .ease-in-out {
+            transition: 3s ease-in-out;
+        }
+        /* transition: 3s ease;가 기본값 / 천-빨-천 */
+        /* transition: 3s ease-in-out;의 경우 ease와 동일하나 전체적인
+        속도가 더 느림 */
+
+
+    </style>
+</head>
+<body>
+    <div id="ex">
+            <div class="ease">ease</div>
+            <div class="linear">linear</div>
+            <div class="ease-in">ease-in</div>
+            <div class="ease-out">ease-out</div>
+            <div class="ease-in-out">ease-in-out</div>
+            
+    </div>
+
+
+
+</body>
+</html>

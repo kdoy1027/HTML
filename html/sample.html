@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    
+    h1{
+        color : blue;
+    }
+
+    h2{
+        color: brown;
+    }
+
+    #a{
+        color: chartreuse;
+    }
+    
+    .b{
+        color: fuchsia;
+    }
+
+    .select{
+        color : red
+    }
+
+    input[type=text] {background : red;}
+    input[type=password] {background: blue}
+
+    #car > h1 {
+        color: yellow;
+    }
+
+    #fruit > h1 {
+        color: blanchedalmond;
+    }
+
+    #c > h1 {
+        color : crimson
+    }
+
+    /*  style의 서순은 계단식 / 위에서 아래로 진행됨.
+
+    h1{ 
+        color:brown; 
+        font-size: 40px;
+    }
+
+    #a { 
+        background-color: red;
+    }
+    #b {
+        background-color: blue;
+    }
+        */
+</style> <!--폰트 색, 크기 등의 스타일 지정 가능/head 아래에 style만들어야함-->
+</head>
+<body>
+    <h1>블록체인 수업</h1>
+    <h2>홈페이지 기초 수업</h2>
+<hr>
+<h1 id="a">HTML</h1> <!--id -> style에서 # / 자바스크립트에서는 id 중복 사용 x 1회 한정-->
+<h2 class="b">CSS3</h2> <!--class ->style에서 .-->
+<br>
+
+    <ul>
+        <li class="select">lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li class="select">lorem ipsum</li>
+        <li>lorem ipsum</li>
+    </ul>
+<br>
+<form>
+    <input type="text">
+    <input type="password">
+</form>
+<br>
+
+<hr>
+
+자동차 종류<br>
+<div id="car"> <!--후손 선택자/위치가 어디든지 id 적용한 영역을 선택-->
+    <h1>현대</h1><!--자손 선택자 / #id > h1 적용하면 바로 아래 영역만 선택-->
+    <div id="c">
+        <h1>소나타</h1>
+        <h1>아반떼</h1>
+    </div>
+
+</div>
+과일 종류<br>
+<div id="fruit"> <!--후손 선택자/위치가 어디든지 id 적용한 영역을 선택-->
+    <h1>열대과일</h1> <!--자손 선택자 / #id > h1 적용하면 바로 아래 영역만 선택-->
+        <div>
+            <h1>바나나</h1>
+        </div>
+
+</div><!--블록태그-->
+<br>
+<hr>
+
+</body>
+</html>

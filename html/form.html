@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 폼 형식</h1>
+    <form>
+        <fieldset><!-- 내용에 테두리 생기고, 제목에 텍스트 입력 가능함-->
+            <legend>기본입력</legend>
+        아이디 : <input type="text"value="kdoy1027" readonly><br><!--readonly 못고치고 읽기만 가능-->
+        이름 : <input type="text" placeholder="반드시 영문으로 기재해주세요" required size="60"><br><!--네모칸 생성 후 안에 글씨 작성 가능-->
+       <!--required 제출했을 때 안적혀있다면 경고-->
+        비밀번호 : <input type="password"><br>
+        파일첨부 : <input type="file"><br>
+        </fieldset>
+        <fieldset>
+            <legend>선택사항</legend><!-- 내용에 테두리 생기고, 제목에 텍스트 입력 가능함-->
+        색깔선택 : <input type="color"><br>
+        날짜 : <input type="date"><br>
+        날짜 상세히 : <input type="datetime-local"><br>
+        이메일 : <input type="email"><br><!-- 모바일 -> email 자판으로 바뀜-->
+        전화번호 : <input type="tel"><br><!--숫자 패드로 변경되어 나옴-->
+        해당월 입력 : <input type="month"><br>
+        해당주 입력 : <input type="week"><br>
+        시간입력 : <input type="time"><br>
+        url 입력 : <input type="url"><br><!--url 전용 키패드-->
+        숫자세기 : <input type="number"><br>
+        검색 : <input type="search"><br> <!--지울 수 있는 x 버튼 나옴 / 모바일은 x -->
+    </fieldset>
+    <input type="submit">
+
+    </form>
+    <br>
+    <form>
+        <fieldset>
+            <legend>추가사항</legend>
+        <textarea rows="6" cols="80"></textarea><br><!--게시판 만들 때 ㄱㄱ-->
+        선택 :
+        <select multiple>
+            <option>기타</option>
+            <option>김밥</option>
+            <option>순대</option>   
+            <option>떡볶이</option>   
+            <option>라면</option>
+            
+        </select>
+        <br>
+        <select>
+            <optgroup label="프론트">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JAVA Script</option>
+            </optgroup>
+            <optgroup label="백엔드">
+                <option>python</option>
+                <option>C</option>
+                <option>c+ Script</option>
+            </optgroup>
+
+        </select>
+    </fieldset>
+
+    </form>
+    <br>
+    <form>
+
+        <h3>수강분야(수강 선택)</h3><!--웹접근성 - 매우 중요!! / 체크박스만 or 글씨까지 포함 138p-->
+            <ul>
+                <li><input type="checkbox">문법</li>
+                <li><input type="checkbox">작문</li>
+                <li><input type="checkbox">독해</li>
+            </ul>
+            <h3>수강분야(수강 선택)</h3>
+            <ul>
+                <label><li><input type="checkbox">영어회화</li></label>
+                <label><li><input type="checkbox">중국어회화</li></label>
+                <label><li><input type="checkbox">일어회화</li></label>
+            </ul>
+
+    <br>
+     <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회원가입</h4>
+        <form>
+            <fieldset>
+                <legend>필수정보</legend>
+                이름 : <input type="text"><br>
+            </fieldset><br>
+            <fieldset>
+                <legend>선택정보</legend>
+                생일 : <input type="date"><br>
+            </fieldset>
+
+
+        </form>
+
+
+    </form>
+
+
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+<h1>연습장</h1>
+<br>
+<h2>연습장</h2>
+<form>
+    <fieldset>
+        <legend>개인정보</legend>
+        <ul type="circle">  
+            <li>이름 <input type="text" placeholder="여백없이 입력"></li><br>
+            <li>연락처 <input tpye="number"placeholder="연락가능한 번호"></li><br>
+        </ul>
+    </fieldset>
+</form>
+<br>
+<form>
+    <fieldset>
+        <legend>성별</legend>
+        <ul type="circle">  
+            <li>성별 
+                <select>
+                    <optgroup>
+                        <option>남자</option>
+                        <option>여자</option>
+                    </optgroup>
+                </select>
+            </li>
+        </ul>
+    </fieldset>
+</form>
+<br>
+<form>
+    <fieldset>
+        <legend>배송지 정보</legend>
+        <ul type="circle">  
+            <li>주소 <input type="text"></li><br>
+            <li>전화번호 <input tpye="number"></li><br>
+            <li>메모</li>
+            <textarea rows="4" cols="50"></textarea>
+        </ul>
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <legend>주문 정보</legend>
+        <ul type="circle">  
+            <li><input type="checkbox">안티구아(100g) <input tpye="number" placeholder="0">개</li><br>
+            <li><input type="checkbox">인도네시아 만델링(100g) <input tpye="number"placeholder="0">개</li><br>
+            <li><input type="checkbox">탐라는도다(블렌딩)(100g)<input type="number"placeholder="0">개</li>
+        </ul>
+    </fieldset>
+    <br>
+    <input type="submit">
+</form>
+</body>
+</html>

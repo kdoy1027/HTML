@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box1 {
+            height:60px ;
+            width: 200px;
+            margin-top: 50px;
+            margin-left: 100px;
+            padding: 20px;
+            text-align: center;
+            animation-name: moving;
+            animation-duration: 2s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+        .box1 h2 {
+            color: white
+        }
+
+
+
+        @keyframes moving {
+            from{
+                width: 200px;
+                height: 60px;
+                background-color: red;
+                transform: scale(0.5) rotate(15deg);
+                opacity: 0.5;
+                animation-iteration-count : infinite
+            }
+
+            to{
+                width: 400px;
+                height: 60px;
+                background-color: blue;
+                transform: scale(1); rotate:(0deg);
+                opacity: 1;
+
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h2>hello world</h2>
+    </div>
+</body>
+</html>

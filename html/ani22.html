@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box1 {
+            width: 100px;
+            height: 100px;
+            background-color: #4cff00;
+            border: 1px solid black;
+            animation-name: shape1;
+            animation-duration: 3s;
+
+        }
+       
+        #box2 {
+            width: 100px;
+            height: 100px;
+            background-color: #8f06b0;
+            border: 1px solid black;
+            animation-name: shape2;
+            animation-duration: 3s;
+        }
+
+        #box1 , #box2 {
+            margin: 20px;
+        }
+
+        @keyframes shape1 {
+            from{
+                border: 1px solid black;
+                margin: 20px;
+            }
+            to{
+                border: 1px solid black;
+                border-radius: 50px;
+                margin: 20px;
+            }
+        }
+
+        @keyframes shape2 {
+            from{
+                transform: rotate(0deg);
+                margin: 20px;
+            }
+            to{
+                transform: rotate(45deg);
+                margin: 20px;
+
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="box1">
+
+    </div>      
+
+    <div id="box2">
+
+
+    </div>
+</body>
+</html>

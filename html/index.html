@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김도윤의 홈페이지</title>
+</head>
+<body>
+    <a href="form.html">1. 폼태그 페이지</a> <br>
+
+
+
+
+
+
+    안 &nbsp;&nbsp;&nbsp; 녕 하 세 요<br>
+    반 갑 습 니 다<br>
+    <a href="http://www.naver.com">NAVER</a><br><!--네이버로 연결/앵커태그-->
+    <a href="http://imbc.com">MBC</a><br><!--<a href="주소">주소이름 / 앵커-주소 첨부-->
+    
+    <hr>
+    <h1><i>헤드라인 글자</h1></i><!--이태리 폰트/글자 기울임-->
+    <h2>헤드라인 글자</h2> <!-- <h1~6>은 글자 작성-->
+    <h3>헤드라인 글자</h3>
+    <h4>헤드라인 글자</h4>
+    <h5>헤드라인 글자</h5>
+    <h6>헤드라인 글자</h6>
+    <h7>헤드라인 글자</h7>
+    <hr>
+    <p>안녕하세요.</p><!--<br>한 줄 구분/<p>는 문단 구분-->
+    <p>반갑습니다.</p>
+    <p>어서와요.</p>
+    <hr>
+        <ruby>
+            <span>대한민국</span>
+            <rt>대한민국
+        </ruby>
+<hr>
+<h1>내가 좋아하는 과일</h1>
+
+</body>
+    <ul type="circle"><!--square, circle 등등-->
+    <li>사과</li>
+    <li>배</li>
+    <li>딸기</li>    
+    </ul>
+<hr>
+<h1>내가 좋아하는 도시</h1>
+<ol type="I" start="1" ><!--start="n"로 시작 순서 지정 가능/reversed 순서 반대로-->
+    <li>서울</li>
+    <li>부산</li>
+    <li>대전</li>
+</ol>
+<hr>
+    <h1>목록태그/정의태그</h1>
+    <dl><!--사전식 정렬 / 정의 목록 태그-->
+        <dt>HTML</dt>
+        <dd>홈페이지 언어</dd>
+        <dd>재미있는 언어</dd>
+
+        <dt>CSS</dt>
+        <dd>꾸미는 작업</dd>
+        <dd>더 재미있는 언어</dd>
+
+    </dl>   
+    <hr>
+    <h1>테이블 만들기   </h1>
+        <table border="5">
+            <tr>
+                <th>이름</th>
+                <th>주소</th>
+                <th>전화번호</th>
+            </tr>
+            <tr>
+                <td>김도윤</td>
+                <td>남양주시 와부읍</td>
+                <td>010-5043-7592</td>
+            </tr>
+
+        </table>
+        <hr>
+        <h2>테이블 연습</h2>
+        <table border="5">
+            <caption>요안도라 객실</caption>
+            <tr>
+                <th>방 이름</th>
+                <th>대상</th>
+                <th>크기</th>
+                <th>가격</th>
+            </tr>
+            <tr>
+                <th>유채방</th>
+                <td>여성 도미토리</td>
+                <th rowspan="3">4인실</th>
+                <th rowspan="4">1인 20,000원</th>
+            </tr>
+            <tr>
+                <th>동백방</th>
+                <td>동성 도미토리</td>
+            </tr>      
+            <tr>
+                <th>동백방</th>
+                <td>가족 1팀</td>           
+            </tr>
+            <tr>
+                <th>천혜향방</th>
+                <th>-</th>
+                <td>2인실</td>           
+            </tr>
+            <tr></tr>
+                <th colspan="4">바깥채 전체를 렌트합니다</th>             
+            </tr>
+
+        </table>
+
+ 
+    <hr>
+    <h3>요안도라 객실</h3>
+       
+
+        <table border="1">
+            <caption>테이블 연습</caption>
+            <tr>
+                <th>방이름</th>
+                <th>대상</th>
+                <th>크기</th>
+                <th>가격</th> 
+            </tr>
+            <tr>
+                <td>유채방</td>
+                <td>여성 도미토리</td>
+                <td rowspan="3">4인실</td>
+                <td rowspan="4">1인 20,000원</td>
+            </tr>
+            <tr>
+                <td rowspan="2">동성 도미토리</td>
+        
+            </tr>
+            <tr>
+                <td>가족 1팀</td>
+            </tr>
+            <tr>
+                <td>천혜향방</td>
+                <td>-</td>
+                <td>2인실</td>
+            </tr>
+            <tr>
+                <th colspan="4">바깥채 전체를 렌트합니다.</th>
+            </tr>
+        </table>
+
+        <hr>
+        <a href="http://www.naver.com">
+        <img src="./image/daumlog.jpg" width="50" height="50" alt="다음이미지"></a>
+        <hr>
+        <audio controls autoplay="autoplay">
+            <source src="./To.mp3" type="audio/mp3"></audio> 
+
+    
+    <hr>
+   
+    <pre>우리<!--보이는 그대로 나옴-->
+            나라
+                대한    민국
+    </pre>
+    <hr>
+    <mark>홈페이지</mark>
+
+    <hr>
+
+    <img src="./image/1.jpg" alt="서울시 관광지도" usemap="#eventmap">
+    <map name="eventmap">
+        <area shape="rect" coords="266,184,421,294" 
+        href="www.naver.com"
+        target="_blank">
+    </map>
+
+        
+
+
+</body>
+</html>

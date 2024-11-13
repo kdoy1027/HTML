@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인소개페이지</title> <!--사이트 제목-->
+    <style>
+        *{
+            box-sizing: border-box;
+        } /*모든 태그 적용 / 여백 없이 계산하도록 설정*/
+        body{
+            background-color: #222;
+            height: 100%;
+            margin: 0;
+        } /*기본적으로 각 요소 사이마다 px 존재 / 각 요소 사이의 여백을 0으로 설정*/
+
+        li,p {
+            line-height: 2.0;
+            font-size: 0.9em;
+        }
+
+        #container {
+            width: 900px;
+            margin: 0 auto;
+            height: 100%;
+            background-color: white;
+        }
+         /*container을 페이지 가운데로 고정하는 방법1 ----width: 900px; margin: 0 auto;*/
+
+        aside {
+            background-color: skyblue;
+            width: 300px;
+            float: left;
+            height: 917px;
+            padding: 20px 50px;
+        }
+
+        .pf{
+            border-radius: 10%;
+            box-shadow: 3px 3px 10px 2px #222;
+        }
+
+        #detail {
+            position: relative;
+            top: 50px;
+        } /*aside 기준 50px 내려옴*/
+
+        #sns {
+            position: relative;
+            top: 100px;
+        }
+
+        #main{
+            width: 600px;
+            float: right;
+            height: 100%;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        #main > section {
+            width: 500px;
+            padding: 20px;
+            margin: 10px;
+        
+            border-bottom: 1px dotted #222;
+        }
+
+        section > p, section > table {
+            margin-left: 50px;
+        }
+
+        aside h1 {
+            font-size: 1.8em;
+        }
+
+        aside h2 {
+            font-size: 1.2em;
+        }
+
+        #namecard p{
+            color: rgb(99, 99,99);
+            font-size: 0.9em;
+            padding: 3px 0px;
+        }
+
+        .subtitle {
+            font-size: 1.5em;
+            line-height: 0.9em;
+        }
+
+        table {
+            border: 1px solid #222;
+            width: 80%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background :#e7e7e8
+        }
+        th, td {
+            border: 1px solid black;
+            padding : 5px;
+            font-size: 0.8em;
+        }
+        
+        #sns > ul {
+            padding-left: 0;
+        }
+
+        #sns > ul > li{
+            width: 80px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <aside> <!--좌우측 공간 만들 수 있음-->
+            <div id="namecard">
+                <img src="./image/pf.jpg" class="pf" alt="자기소개사진">
+                <h1>Kim Do Yun</h1>
+                <p>김도윤 소개 페이지 입니다.</p>
+            </div>
+
+            <div id="detail">
+                <p>Seoul, Guri</p>
+                <p>kdoy1027@naver.com</p>
+            </div>
+
+            <div id="sns">
+                <h2>SNS</h2>
+                <ul>
+                    <li>
+                        <a href="http://www.facebook.com">facebook</a>
+                    </li>
+                    <li>
+                        <a href="http://www.twitter.co.kr">twitter</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </aside> 
+        
+        
+        
+        <div id="main">
+            <!--자기소개-->
+            <section class="subtitle">
+                <h2>Who am I?</h2>
+                <p><mark>블록체인</mark>을 배우고 있는 수강생입니다.</p>
+            </section>
+
+    
+            <!--경력 기술-->
+            <section>
+                <h2 class="subtitle">Experience</h2>
+                <ul type="square">
+                        <li>프론트엔드 개발</li>
+                            <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Java script</li>
+                            </ul>
+                            <br>
+                        <li>백엔드 개발</li>    
+                            <ul>
+                                <li>Node.js</li>
+                                <li>React</li>
+                            </ul>
+                </ul>
+            </section>
+
+
+
+            <!--숙련도-->
+            <section>
+                <h2 class="subtitle">Skills</h2>
+            </section>
+            
+           
+        
+            <!--학력-->
+            <section >
+                <h2 class="subtitle">Education</h2>
+                <table >
+                    <caption>학력사항</caption>
+                    <thead>
+                        <tr>
+                            <th>출신학교</th>
+                            <th>전공</th>
+                            <th>기간</th>
+                            <th>구분</th>
+                        </tr>
+
+
+
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>서울대학교</th>
+                            <th>컴퓨터공학</th>
+                            <th>2024.9~2024.9</th>
+                            <th>졸업</th>
+                        </tr>
+                        
+                        <tr>
+                            <th>서울고등학교</th>
+                            <th>자연계</th>
+                            <th>2024.9~2024.9</th>
+                            <th>졸업</th>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+
+
+            </section>
+
+        </div>
+
+
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            width: 390px;
+            height: 250px;
+            text-align: center;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+
+
+        .photo{
+            border: 1px solid #ccc;
+        }
+
+
+        .photo:hover{
+            border: 1px solid black;
+            border-radius: 10px;
+            transform: rotateZ(-30deg);
+        }
+        
+        /* transform: rotateZ(-30deg)에서 각도를 -로 설정하면 시계 반대 방향으로 돌아감 */
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <img src="./image/coffee.jpg" class="photo">
+    </div>
+</body>
+</html>

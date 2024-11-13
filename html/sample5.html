@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: absolute;
+}
+/*position : absolute(절대위치) 는 좌표를 0,0으로 설정 / 하향이 + /상향이 -  / 
+z-index : n 숫자 크기에 따라 순서/ 높은 숫자가 1순위*/
+.red{
+    background-color: red;
+    left : 20px;
+    top :10px;
+    z-index: 100;
+}
+.green {
+    background-color: green;
+    left : 50px;
+    top: 50px;
+    z-index: 80;
+}
+
+.blue{
+    background-color: blue;
+    left : 90px;
+    top : 90px;
+    z-index: 60;
+}
+
+.yellow{
+    background-color: yellow;
+    left : 120px;
+    top : 120px;
+    z-index: 40;
+
+}
+
+.black{
+    background-color: black;
+    left : 150px;
+    top : 150px;
+    z-index: 20;
+}
+
+.big_box {
+    width: 400px;
+    height: 300px;
+    border: 3px solid black;
+    position: relative;
+    overflow: scroll; 
+}
+/* overflow는 부모 영역을 넘어간 경우 안보이게 해줌/ 상대영역이 있어야 적용되어야 가능
+ scroll의 경우 부모 영역 넘어간 부분을 스크롤 통해 내부에 볼 수 있게 함
+ div{position: relative;}의 경우 절대영역 설정 후 */
+
+
+</style>
+</head>
+<body>
+    <h1>lorm ispum dolr ame</h1>
+    
+<div class="big_box">
+    
+    <div class="box red">
+    </div>
+    
+    <div class="box green"> 
+    </div>
+    
+    <div class="box blue">
+    </div>
+    
+    <div class="box yellow">
+    </div>
+    
+    <div class="box black"></div>
+    </div>
+
+</div>
+    <h1>lorm ispum dolr ame</h1>
+    
+</body>
+</html>
